@@ -1,0 +1,41 @@
+name: Admin
+version: '${project.version}'
+main: net.goldgruben.admin.Admin
+api-version: 1.18
+
+
+commands:
+  feed:
+    usage: /feed
+    permission: cmd.goldgruben.feed
+    permission-message: Du bist kein Gott
+  heal:
+    usage: /heal
+    permission: cmd.goldgruben.heal
+    permission-message: Du bist kein Gott
+  fly:
+    usage : /fly
+    permission: cmd.goldgruben.fly
+    permission-message: Du bist kein Gott
+  scare:
+    usage: /scare
+    permission: cmd.goldgruben.scare
+    permission-message: Du bist kein Geist
+  gmc :
+    usage: /gamemode
+    permission: cmd.goldgruben.gamemode
+    permission-message: Du bist kein Gott
+  gms:
+    usage: /gamemode
+    permission: cmd.goldgruben.gamemode
+    permission-message: Du bist kein Gott
+
+  cage:
+    usage: /cage
+    permission: cmd.goldgruben.cage
+    permission-message: Du bist nicht Loki
+
+  chatclear:
+    usage: /ChatClear
+    permission: cmd.goldgruben.Chatclear
+    permission-message: Du bist kein Gott

@@ -1,5 +1,6 @@
 package net.goldgruben.admin.Commands;
 
+import net.goldgruben.admin.utils.Messages;
 import org.bukkit.Bukkit;
 import org.bukkit.Sound;
 import org.bukkit.command.Command;
@@ -16,7 +17,7 @@ public class Scare implements CommandExecutor {
 
         if (target == null){
 
-            sender.sendMessage("Das Ziel ist nicht da");
+            sender.sendMessage(Messages.notonline);
             return true;
 
         }

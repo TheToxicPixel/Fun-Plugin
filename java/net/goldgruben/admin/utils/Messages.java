@@ -8,5 +8,6 @@ public class Messages {
     public static String notactive = "Du bist nicht göttlich genug";
 
     public static String sucsess = "Alle Sprach aufzeichnung wurden von einem Engel verlegt";
+    public static String notonline = "Spieler ist nicht in deiner Macht";
 
 }

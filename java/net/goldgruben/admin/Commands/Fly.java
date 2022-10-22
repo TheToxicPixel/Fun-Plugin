@@ -45,7 +45,7 @@ public class Fly implements CommandExecutor {
             Player target = Bukkit.getServer().getPlayer(args[0]);
             if (target == null) {
 
-                sender.sendMessage("Spieler ist nicht in deiner Macht");
+                sender.sendMessage(Messages.notonline);
 
             } else {
                 if (target.getAllowFlight() == true) {

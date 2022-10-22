@@ -32,7 +32,7 @@ public class Cage implements CommandExecutor {
             World welt = target.getWorld();
             if (target == null) {
 
-                sender.sendMessage("Spieler ist nicht in deiner Macht");
+                sender.sendMessage(Messages.notonline);
 
             } else {
 

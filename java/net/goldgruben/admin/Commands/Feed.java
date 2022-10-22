@@ -33,7 +33,7 @@ public class Feed implements CommandExecutor {
             if (sender instanceof Player) {
 
                 Player p = (Player) sender;
-
+                p.setFoodLevel(20);
                 p.getInventory().addItem(Feed);
                 p.sendMessage("Items added");
 

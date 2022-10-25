@@ -11,21 +11,9 @@ import org.bukkit.entity.Player;
 
 public class ChatClear implements CommandExecutor {
 
-    boolean active = false;
-
-    public ChatClear(){
-        if (Config.contains("command.chatclear.active")){
-
-        }else {
-            Config.set("command.chatclear.active", false);
-        }
-
-    }
-
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 
-        if (active) {
             if (sender instanceof ConsoleCommandSender) {
 
                 sender.sendMessage(Messages.noplayer);
@@ -42,9 +30,7 @@ public class ChatClear implements CommandExecutor {
                 }
 
             }
-        }else {
-            sender.sendMessage(Messages.notactive);
-        }
+
 
         return false;
     }

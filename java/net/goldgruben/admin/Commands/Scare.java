@@ -16,28 +16,19 @@ public class Scare implements CommandExecutor {
         Player target = Bukkit.getServer().getPlayer(args[0]);
 
         if (target == null){
-
             sender.sendMessage(Messages.notonline);
             return true;
-
         }
 
         Sound sound = null;
         for (Sound s :Sound.values()){
             if (s.toString().contains(args[1])){
-
                 sound = s;
-
-
             }
-
             else {
-
                 sender.sendMessage("Sound not found");
-
                 return true;
             }
-
         }
         String svol =args[2]+"F";
         int volume = Integer.parseInt(svol);

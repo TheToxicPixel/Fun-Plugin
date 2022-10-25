@@ -23,17 +23,9 @@ public class Heal implements CommandExecutor {
                 p.sendMessage(ChatColor.GREEN + "healed");
 
             }else p.sendMessage("Du hast schon Herzen wie ein Gott");
-
-
-
         }else {
-
             sender.sendMessage(Messages.noplayer);
-
         }
-
-
-
 
         return false;
     }

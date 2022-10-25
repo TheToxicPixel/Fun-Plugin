@@ -10,29 +10,15 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
 public class Feed implements CommandExecutor {
-
-    boolean active = false;
-
-    public Feed() {
-        if (Config.contains("command.feed.active")){
-    }else {
-            Config.set("command.feed.active", false);
-        }
-
-    }
-
-
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 
-
-        if (active) {
             ItemStack Feed = new ItemStack(Material.COOKED_BEEF);
             Feed.setAmount(64);
+            Player p = (Player) sender;
 
             if (sender instanceof Player) {
 
-                Player p = (Player) sender;
                 p.setFoodLevel(20);
                 p.getInventory().addItem(Feed);
                 p.sendMessage("Items added");
@@ -42,7 +28,7 @@ public class Feed implements CommandExecutor {
                 sender.sendMessage(Messages.noplayer);
 
             }
-        }else sender.sendMessage(Messages.notactive);
+
         return false;
     }
 }

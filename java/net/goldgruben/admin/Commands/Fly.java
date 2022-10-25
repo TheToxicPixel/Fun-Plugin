@@ -9,18 +9,8 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 public class Fly implements CommandExecutor {
-    boolean active = false;
-    public Fly(){
-        if (Config.contains("command.fly.active")){
-
-        }else {
-            Config.set("command.fly.active", false);
-        }
-    }
-
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        if (active) {
             if (sender instanceof Player) {
 
                 Player p = (Player) sender;
@@ -55,7 +45,7 @@ public class Fly implements CommandExecutor {
                 }
                 target.setAllowFlight(true);
             }
-        }else sender.sendMessage(Messages.notactive);
+
 
         return false;
     }

@@ -31,6 +31,8 @@ public final class Admin extends JavaPlugin {
         getCommand("gmc").setExecutor(new Gamemode());
         getCommand("cage").setExecutor(new Cage());
         getCommand("chatclear").setExecutor(new ChatClear());
+        getCommand("blocktohead").setExecutor(new BlocktoHead());
+        getCommand("backpack").setExecutor(new Backpack());
 
     }
 

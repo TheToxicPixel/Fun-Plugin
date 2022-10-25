@@ -36,6 +36,14 @@ commands:
     permission-message: Du bist nicht Loki
 
   chatclear:
-    usage: /ChatClear
-    permission: cmd.goldgruben.Chatclear
+    usage: /chatclear
+    permission: cmd.goldgruben.chatclear
     permission-message: Du bist kein Gott
+  blocktohead :
+    usage: /blocktohead
+    permission: cmd.goldgruben.blocktohead
+    permission-message: Du bist kein Clown
+  backpack:
+    usage: /backpack
+    permission: cmd.goldgruben.backpack
+    permission-message: Du bist kein Wanderer

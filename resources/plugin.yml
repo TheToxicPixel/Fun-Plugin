@@ -22,11 +22,11 @@ commands:
     permission: cmd.goldgruben.scare
     permission-message: Du bist kein Geist
   gmc :
-    usage: /gamemode
+    usage: /gmc
     permission: cmd.goldgruben.gamemode
     permission-message: Du bist kein Gott
   gms:
-    usage: /gamemode
+    usage: /gms
     permission: cmd.goldgruben.gamemode
     permission-message: Du bist kein Gott
 
@@ -47,3 +47,7 @@ commands:
     usage: /backpack
     permission: cmd.goldgruben.backpack
     permission-message: Du bist kein Wanderer
+  nick:
+    usage: /nick
+    permission: cmd.goldgruben.nick
+    permission-message: Du bist kein Geheimagent

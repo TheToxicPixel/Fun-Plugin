@@ -33,6 +33,7 @@ public final class Admin extends JavaPlugin {
         getCommand("chatclear").setExecutor(new ChatClear());
         getCommand("blocktohead").setExecutor(new BlocktoHead());
         getCommand("backpack").setExecutor(new Backpack());
+        getCommand("nick").setExecutor(new Nick());
 
     }
 

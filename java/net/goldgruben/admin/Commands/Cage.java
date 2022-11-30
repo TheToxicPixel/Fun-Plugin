@@ -1,6 +1,5 @@
 package net.goldgruben.admin.Commands;
 
-import net.goldgruben.admin.utils.Config;
 import net.goldgruben.admin.utils.Messages;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;

@@ -1,6 +1,5 @@
 package net.goldgruben.admin.Commands;
 
-import net.goldgruben.admin.utils.Config;
 import net.goldgruben.admin.utils.Messages;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
@@ -8,7 +7,6 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.bukkit.inventory.ItemStack;
 public class BlocktoHead implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {

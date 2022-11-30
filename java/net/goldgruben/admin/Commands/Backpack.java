@@ -11,7 +11,6 @@ import org.bukkit.inventory.Inventory;
 
 public class Backpack implements CommandExecutor {
 
-
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 
@@ -40,3 +39,4 @@ public class Backpack implements CommandExecutor {
         }
     }
 }
+
